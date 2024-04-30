@@ -15,6 +15,11 @@ namespace ActiveRagdoll {
         public float lookSensitivity = 1;
         public float scrollSensitivity = 1;
         public bool invertY = false, invertX = false;
+         [Header("--- Viewport Rectangle ---")]
+        public float viewPortX = 0;
+        public float viewPortY = 0;
+        public float viewportHeight = 1;
+        public float viewportWidth = 1;
 
         public GameObject Camera { get; private set; }
         private Vector2 _cameraRotation;
@@ -62,6 +67,8 @@ namespace ActiveRagdoll {
 
         void Start() {
             Camera = new GameObject("Active Ragdoll Camera", typeof(UnityEngine.Camera));
+            Camera cameraComponent = Camera.GetComponent<Camera>();
+            cameraComponent.rect = new Rect(viewPortX, viewPortY, viewportWidth, viewportHeight);
             Camera.transform.parent = transform;
 
             _smoothedLookPoint = _lookPoint.position;
