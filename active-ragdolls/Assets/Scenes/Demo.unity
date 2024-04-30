@@ -1380,13 +1380,13 @@ MonoBehaviour:
   - name: Left
     routes:
     - original: 37
-      remapped: 63
+      remapped: 37
     - original: 33
-      remapped: 64
+      remapped: 33
     - original: 15
-      remapped: 61
+      remapped: 15
     - original: 18
-      remapped: 62
+      remapped: 18
     - original: 63
       remapped: 0
     - original: 64
@@ -1398,13 +1398,13 @@ MonoBehaviour:
   - name: Right
     routes:
     - original: 37
-      remapped: 37
+      remapped: 63
     - original: 33
-      remapped: 33
+      remapped: 64
     - original: 15
-      remapped: 15
+      remapped: 61
     - original: 18
-      remapped: 18
+      remapped: 62
     - original: 63
       remapped: 0
     - original: 64
