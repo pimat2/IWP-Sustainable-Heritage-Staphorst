@@ -197,6 +197,17 @@
                 },
                 {
                     "name": "",
+                    "id": "8b2ad8f9-a719-4958-aa26-e84d81722caa",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightArm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "53866052-caf2-4153-96f6-2c5fd8dd559d",
                     "path": "<Mouse>/scroll",
                     "interactions": "",
@@ -224,6 +235,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "LeftArm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9120deb2-c5ad-457c-b94d-4f9f32c644a8",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "LeftArm",
                     "isComposite": false,
                     "isPartOfComposite": false
