@@ -6,11 +6,11 @@ TerrainLayer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: dirt_desatured_rocks_left
-  m_DiffuseTexture: {fileID: 2800000, guid: 6a2038d9c518b704183dbd9fdf8534fd, type: 3}
-  m_NormalMapTexture: {fileID: 2800000, guid: b8e69dcc8688d2a4fb5e554a93b0c6a2, type: 3}
-  m_MaskMapTexture: {fileID: 2800000, guid: 8404035ca32267042b51663fea6d09d8, type: 3}
-  m_TileSize: {x: 1, y: 1}
+  m_Name: NewLayer
+  m_DiffuseTexture: {fileID: 2800000, guid: 388f2f1cf74926b4b87216b23523d64d, type: 3}
+  m_NormalMapTexture: {fileID: 2800000, guid: ebd860c0227aa48418f02eb2af1438b1, type: 3}
+  m_MaskMapTexture: {fileID: 2800000, guid: 516d1c7e6c61e8e41a7adb2948e1495d, type: 3}
+  m_TileSize: {x: 2, y: 2}
   m_TileOffset: {x: 0, y: 0}
   m_Specular: {r: 0, g: 0, b: 0, a: 0}
   m_Metallic: 0

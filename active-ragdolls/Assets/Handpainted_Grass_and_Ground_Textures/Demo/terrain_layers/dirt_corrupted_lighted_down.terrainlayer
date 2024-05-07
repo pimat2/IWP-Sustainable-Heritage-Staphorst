@@ -7,10 +7,10 @@ TerrainLayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: dirt_corrupted_lighted_down
-  m_DiffuseTexture: {fileID: 2800000, guid: af53ed92faa41fd4ebd43ac7e1a8c086, type: 3}
-  m_NormalMapTexture: {fileID: 0}
-  m_MaskMapTexture: {fileID: 0}
-  m_TileSize: {x: 2, y: 2}
+  m_DiffuseTexture: {fileID: 2800000, guid: 95bb46061a77ef14aa49fb4aba394a6d, type: 3}
+  m_NormalMapTexture: {fileID: 2800000, guid: 806706e0169bc6e4195a4c05f9cd119a, type: 3}
+  m_MaskMapTexture: {fileID: 2800000, guid: 0d23a9a010c872341b205d6359ed2ff9, type: 3}
+  m_TileSize: {x: 0.4, y: 0.4}
   m_TileOffset: {x: 0, y: 0}
   m_Specular: {r: 0, g: 0, b: 0, a: 0}
   m_Metallic: 0
