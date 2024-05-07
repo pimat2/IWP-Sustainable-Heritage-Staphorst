@@ -267,6 +267,10 @@ MonoBehaviour:
   scrollSensitivity: 1
   invertY: 0
   invertX: 0
+  viewPortX: 0
+  viewPortY: 0
+  viewportHeight: 1
+  viewportWidth: 1
   smoothSpeed: 5
   smooth: 1
   improveSteepInclinations: 1
