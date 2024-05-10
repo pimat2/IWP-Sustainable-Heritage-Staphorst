@@ -7,6 +7,7 @@ TagManager:
   - MissingLever
   - RotatingLever
   - WaterSystemPlank
+  - ActivatorCube
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - 
   - ActiveRagdoll
   - DontBlockCamera
-  - 
+  - Interactables
   - 
   - 
   - 
