@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 117
+  controlID: 65
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 55
+  controlID: 66
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 56
+  controlID: 67
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -475,9 +475,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 64}
-      m_SelectedIDs: be570000
-      m_LastClickedID: 22462
-      m_ExpandedIDs: 2afbffff285b0000
+      m_SelectedIDs: ee570000
+      m_LastClickedID: 22510
+      m_ExpandedIDs: 2e88feff263fffff2afbffff865400005e560000c45800003c5b00005c5b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -884,9 +884,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 72.28985, y: 10.251928, z: 52.395824}
+    m_Target: {x: 65.39567, y: 15.396299, z: 57.796177}
     speed: 2
-    m_Value: {x: 72.28985, y: 10.251928, z: 52.395824}
+    m_Value: {x: 65.39567, y: 15.396299, z: 57.796177}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -932,9 +932,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.05812808, y: -0.89229643, z: 0.12553665, w: -0.4277033}
+    m_Target: {x: -0.22351927, y: -0.772417, z: 0.36730027, w: -0.46543977}
     speed: 2
-    m_Value: {x: -0.05799014, y: -0.8937142, z: 0.12573305, w: -0.42673546}
+    m_Value: {x: -0.22427948, y: -0.77243954, z: 0.3673077, w: -0.46703416}
   m_Size:
     m_Target: 9.588238
     speed: 2
@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Easy3D/Stylized Farm Asset Pack - Small/Models
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jaspe\Desktop\IndieTopia Project\IWP-Sustainable-Heritage-Staphorst\active-ragdolls
   m_LockTracker:
@@ -1099,7 +1099,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 01ca9a3b
     m_LastClickedID: 1000000001
-    m_ExpandedIDs: 00000000b85e0000ba5e000000ca9a3b
+    m_ExpandedIDs: 00000000085f00000a5f0000785f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1127,7 +1127,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b85e0000ba5e0000
+    m_ExpandedIDs: 00000000085f00000a5f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1154,7 +1154,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300008e6f00002465000088ad0000b65b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1179,7 +1179,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 147}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
