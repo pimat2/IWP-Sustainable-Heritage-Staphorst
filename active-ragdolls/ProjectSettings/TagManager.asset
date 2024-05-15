@@ -7,7 +7,9 @@ TagManager:
   - MissingLever
   - RotatingLever
   - WaterSystemPlank
-  - ActivatorCube
+  - GreenCube
+  - BlueCube
+  - BrownCube
   layers:
   - Default
   - TransparentFX

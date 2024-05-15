@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c1b9dbdf43a6ddf47a84ab54e9676561, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5bb0d60432aa6174da0fe7aa1eda759d, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -80,7 +80,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PressurePlate
+  m_Name: BluePressurePlate
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: shouldMoveDown
@@ -178,7 +178,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c1b9dbdf43a6ddf47a84ab54e9676561, type: 2}
+  m_Motion: {fileID: 7400000, guid: 147b790fb76f73940bce8f68ebc8a793, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
