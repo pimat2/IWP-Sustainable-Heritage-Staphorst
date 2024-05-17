@@ -4504,7 +4504,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &181610121
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4595,7 +4595,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -25230,7 +25230,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -78992,6 +78992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalPressurePlatesCount: 3
+  bridgeToActivate: {fileID: 0}
 --- !u!95 &1489889934
 Animator:
   serializedVersion: 5
@@ -94873,6 +94874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalPressurePlatesCount: 3
+  bridgeToActivate: {fileID: 0}
 --- !u!95 &1829550314
 Animator:
   serializedVersion: 5
@@ -99237,6 +99239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalPressurePlatesCount: 3
+  bridgeToActivate: {fileID: 0}
 --- !u!43 &1914776331
 Mesh:
   m_ObjectHideFlags: 0
