@@ -10,6 +10,7 @@ TagManager:
   - GreenCube
   - BlueCube
   - BrownCube
+  - PlayerFoot
   layers:
   - Default
   - TransparentFX
