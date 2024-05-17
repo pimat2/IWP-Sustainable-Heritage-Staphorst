@@ -6,11 +6,12 @@ public class PressurePlateAnimation : MonoBehaviour
 {
     public  static int activatedPressurePlatesCount = 0;
     public int totalPressurePlatesCount = 3;
+    [SerializeField]
+    GameObject bridgeToActivate;
     void Start() {
         activatedPressurePlatesCount = Mathf.Clamp(activatedPressurePlatesCount, 0 , totalPressurePlatesCount);    
     }
     public void PressurePlateFullyDown(){
-        Debug.Log("Pressure plate has gone fully DOWN");
         activatedPressurePlatesCount ++;
         Debug.Log(activatedPressurePlatesCount);
         if(activatedPressurePlatesCount >= totalPressurePlatesCount){
@@ -19,7 +20,6 @@ public class PressurePlateAnimation : MonoBehaviour
         
     }
     public void PressurePlateFullyUp(){
-        Debug.Log("Pressure plate has gone fully UP");
         if(activatedPressurePlatesCount <= 0){
             return;
         }
@@ -30,5 +30,12 @@ public class PressurePlateAnimation : MonoBehaviour
     }
     public void AllPressurePlatesActivated(){
         Debug.Log("ALL PRESSURE PLATES HAVE BEEN ACTIVATED");
+        if(bridgeToActivate.activeSelf == false){
+            bridgeToActivate.SetActive(true);
+        }
+        else{
+            return;
+        }
+        
     }
 }
