@@ -7,6 +7,8 @@ public class SecondPuzzleChecker : MonoBehaviour
 {
     [SerializeField]
     GameObject secondBridge;
+    [SerializeField]
+    GameObject secondTreeofLife;
     bool isFirstPuzzleComplete;
     bool isSecondPuzzleComplete;
     public WaterSystemCollider[] waterColliders;
@@ -38,6 +40,12 @@ public class SecondPuzzleChecker : MonoBehaviour
         if(isFirstPuzzleComplete && isSecondPuzzleComplete){
             Debug.Log("Puzzles are complete");
             if(secondBridge.activeSelf == false){
+                secondBridge.SetActive(true);
+            }
+            else{
+                return;
+            }
+            if(secondTreeofLife.activeSelf == false){
                 secondBridge.SetActive(true);
             }
             else{

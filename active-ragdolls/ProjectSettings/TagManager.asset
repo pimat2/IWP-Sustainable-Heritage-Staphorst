@@ -11,6 +11,9 @@ TagManager:
   - BlueCube
   - BrownCube
   - PlayerFoot
+  - TreeofLifeFirstPart
+  - TreeofLifeSecondPart
+  - TreeofLifeThirdPart
   layers:
   - Default
   - TransparentFX
