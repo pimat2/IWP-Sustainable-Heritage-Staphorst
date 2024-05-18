@@ -14,6 +14,7 @@ TagManager:
   - TreeofLifeFirstPart
   - TreeofLifeSecondPart
   - TreeofLifeThirdPart
+  - BridgePlank
   layers:
   - Default
   - TransparentFX
