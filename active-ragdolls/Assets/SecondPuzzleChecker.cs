@@ -46,7 +46,7 @@ public class SecondPuzzleChecker : MonoBehaviour
                 return;
             }
             if(secondTreeofLife.activeSelf == false){
-                secondBridge.SetActive(true);
+                secondTreeofLife.SetActive(true);
             }
             else{
                 return;

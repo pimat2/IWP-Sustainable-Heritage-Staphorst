@@ -12,12 +12,17 @@ public class MiniGameManager : MonoBehaviour
     [Header("Active Ragdoll Prefab to Spawn after Beetroot Puzzle")]
     [SerializeField]
     GameObject activeRagdollPrefab;
-    [SerializeField]
+    
     [Header("Initial player gameobjects")]
-    GameObject player1, player2;
+    [SerializeField]
+    GameObject player1;
+    [SerializeField]
+    GameObject player2;
     [Header("Static Ragdolls for puzzle camera view")]
     [SerializeField]
-    GameObject staticplayer1, staticplayer2;
+    GameObject staticplayer1;
+    [SerializeField]
+    GameObject staticplayer2;
     [Header("Side Camera")]
     public Camera sideCamera;
     public GameObject minigameSlider;
@@ -32,6 +37,11 @@ public class MiniGameManager : MonoBehaviour
     [SerializeField]
     GameObject spawnPoint1, spawnPoint2;
     Vector3 spawnLocation1, spawnLocation2;
+    [Header("Beetroot Rigidbodies")]
+    [SerializeField]
+    Rigidbody beetrootRigidbody;
+    [SerializeField]
+    Rigidbody leavesRigidbody;
 
     private void Start() {
         spawnLocation1 = spawnPoint1.transform.position;
@@ -91,5 +101,11 @@ public class MiniGameManager : MonoBehaviour
         GameObject newPlayer2 = Instantiate(activeRagdollPrefab, spawnLocation2, Quaternion.identity);
         CameraModule cameraModule = newPlayer1.GetComponent<CameraModule>();
         cameraModule.viewPortX = 0;
+        if(beetrootRigidbody.isKinematic == true){
+            beetrootRigidbody.isKinematic = false;
+        }
+        if(leavesRigidbody.isKinematic == true){
+            leavesRigidbody.isKinematic = false;
+        }
     }
 }

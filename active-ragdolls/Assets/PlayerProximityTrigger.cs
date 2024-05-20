@@ -16,7 +16,7 @@ public class PlayerProximityTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if(other.CompareTag("PlayerFoot")){
             if(scriptComponent != null){
-                scriptComponent.enabled = !scriptComponent.enabled;
+                scriptComponent.enabled = false;
             }
             else{
                 return;
