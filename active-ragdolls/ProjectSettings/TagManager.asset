@@ -15,6 +15,9 @@ TagManager:
   - TreeofLifeSecondPart
   - TreeofLifeThirdPart
   - BridgePlank
+  - Player1Foot
+  - Player2Foot
+  - MovingLine
   layers:
   - Default
   - TransparentFX
