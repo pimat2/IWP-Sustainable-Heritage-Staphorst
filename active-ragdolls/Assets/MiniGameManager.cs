@@ -9,12 +9,16 @@ using UnityEngine.Rendering;
 
 public class MiniGameManager : MonoBehaviour
 {
+    [Header("Active Ragdoll Prefab to Spawn after Beetroot Puzzle")]
     [SerializeField]
     GameObject activeRagdollPrefab;
     [SerializeField]
+    [Header("Initial player gameobjects")]
     GameObject player1, player2;
+    [Header("Static Ragdolls for puzzle camera view")]
     [SerializeField]
     GameObject staticplayer1, staticplayer2;
+    [Header("Side Camera")]
     public Camera sideCamera;
     public GameObject minigameSlider;
     [SerializeField]
@@ -81,10 +85,8 @@ public class MiniGameManager : MonoBehaviour
         minigameSlider.SetActive(false);
         Destroy(staticplayer1);
         Destroy(staticplayer2);
-        // staticplayer1.SetActive(false);
-        // staticplayer2.SetActive(false);
-        // player2.SetActive(true); //is bugged look for a fix
-        // player1.SetActive(true);
+        Destroy(player1);
+        Destroy(player2);
         GameObject newPlayer1 = Instantiate(activeRagdollPrefab, spawnLocation1, Quaternion.identity);
         GameObject newPlayer2 = Instantiate(activeRagdollPrefab, spawnLocation2, Quaternion.identity);
         CameraModule cameraModule = newPlayer1.GetComponent<CameraModule>();
