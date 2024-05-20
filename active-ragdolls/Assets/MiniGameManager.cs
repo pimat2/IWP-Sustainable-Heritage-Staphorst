@@ -1,12 +1,16 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using ActiveRagdoll;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
+using UnityEngine.Rendering;
 
 public class MiniGameManager : MonoBehaviour
 {
+    [SerializeField]
+    GameObject activeRagdollPrefab;
     [SerializeField]
     GameObject player1, player2;
     [SerializeField]
@@ -21,6 +25,14 @@ public class MiniGameManager : MonoBehaviour
     Animator beetrootAnimator;
     public int animatorState = 0;
     public GameObject beetrootCollider;
+    [SerializeField]
+    GameObject spawnPoint1, spawnPoint2;
+    Vector3 spawnLocation1, spawnLocation2;
+
+    private void Start() {
+        spawnLocation1 = spawnPoint1.transform.position;
+        spawnLocation2 = spawnPoint2.transform.position;
+    }
     public void StartMinigame(){
         Debug.Log("MINIGAME SHOULD START");
         player1.SetActive(false);
@@ -71,8 +83,11 @@ public class MiniGameManager : MonoBehaviour
         Destroy(staticplayer2);
         // staticplayer1.SetActive(false);
         // staticplayer2.SetActive(false);
-        player2.SetActive(true); //is bugged look for a fix
-        player1.SetActive(true);
-      
+        // player2.SetActive(true); //is bugged look for a fix
+        // player1.SetActive(true);
+        GameObject newPlayer1 = Instantiate(activeRagdollPrefab, spawnLocation1, Quaternion.identity);
+        GameObject newPlayer2 = Instantiate(activeRagdollPrefab, spawnLocation2, Quaternion.identity);
+        CameraModule cameraModule = newPlayer1.GetComponent<CameraModule>();
+        cameraModule.viewPortX = 0;
     }
 }
