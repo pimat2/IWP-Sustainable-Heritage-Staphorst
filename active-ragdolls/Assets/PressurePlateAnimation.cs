@@ -8,6 +8,11 @@ public class PressurePlateAnimation : MonoBehaviour
     public int totalPressurePlatesCount = 3;
     [SerializeField]
     GameObject gameObjectToActivate;
+    private void Update() {
+        if(Input.GetKeyDown(KeyCode.Y)){
+            AllPressurePlatesActivated();
+        }
+    }
     void Start() {
         activatedPressurePlatesCount = Mathf.Clamp(activatedPressurePlatesCount, 0 , totalPressurePlatesCount);    
     }
