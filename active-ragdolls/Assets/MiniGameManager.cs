@@ -69,6 +69,9 @@ public class MiniGameManager : MonoBehaviour
                 FinishMiniGame();
             }
         }
+        if(miniGameActive == false && Input.GetKeyDown(KeyCode.Escape)){
+            Application.Quit();
+        }
     }
 
     private void CheckInputTiming()
