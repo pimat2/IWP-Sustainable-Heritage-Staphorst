@@ -8613,6 +8613,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 244223828}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &304896106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8679607245680263849, guid: e7d6eb2880ca85b469772cb7365c64dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 5553689564677022734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &304896111
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304896106}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bbbc509e565171a47a9ad1e5f8d87523, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &311429307
 GameObject:
   m_ObjectHideFlags: 0
@@ -75512,6 +75539,27 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1098747870}
     m_Modifications:
+    - target: {fileID: 4056889003901323402, guid: e7d6eb2880ca85b469772cb7365c64dd,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4056889003901323402, guid: e7d6eb2880ca85b469772cb7365c64dd,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4056889003901323402, guid: e7d6eb2880ca85b469772cb7365c64dd,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5275602031823607924, guid: e7d6eb2880ca85b469772cb7365c64dd,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a05ca4aa5c0dc6b4bbe9246f1c531f16,
+        type: 3}
     - target: {fileID: 6351413311108866463, guid: e7d6eb2880ca85b469772cb7365c64dd,
         type: 3}
       propertyPath: m_Pivot.x
@@ -75620,7 +75668,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8679607245680263849, guid: e7d6eb2880ca85b469772cb7365c64dd,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 304896111}
   m_SourcePrefab: {fileID: 100100000, guid: e7d6eb2880ca85b469772cb7365c64dd, type: 3}
 --- !u!1 &5853752002996357468
 GameObject:
