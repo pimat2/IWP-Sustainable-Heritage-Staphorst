@@ -20,6 +20,7 @@ TagManager:
   - MovingLine
   - Beetroot
   - BeetrootLeaves
+  - PullableDoor
   layers:
   - Default
   - TransparentFX
