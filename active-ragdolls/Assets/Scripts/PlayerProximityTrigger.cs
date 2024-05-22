@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerProximityTrigger : MonoBehaviour
 {
     [SerializeField]
+    GameObject triggerToActivate;
+    [SerializeField]
     GameObject movingObject;
     private MovingPiece scriptComponent;
     private Rigidbody rigidbodyComponent;
@@ -23,6 +25,9 @@ public class PlayerProximityTrigger : MonoBehaviour
             }
             if(rigidbodyComponent != null){
                 rigidbodyComponent.isKinematic = false;
+            }
+            if(triggerToActivate.activeSelf == false){
+                triggerToActivate.SetActive(true);
             }
         }
     }
