@@ -9,6 +9,8 @@ public class PressurePlateAnimation : MonoBehaviour
     bool pressurePlateDown;
     [SerializeField]
     GameObject gameObjectToActivate;
+    [SerializeField]
+    GameObject treeOfLifeTrigger;
     private void Update() {
         if(Input.GetKeyDown(KeyCode.Y)){
             AllPressurePlatesActivated();
@@ -41,6 +43,7 @@ public class PressurePlateAnimation : MonoBehaviour
     public void AllPressurePlatesActivated(){
         Debug.Log("ALL PRESSURE PLATES HAVE BEEN ACTIVATED");
         if(gameObjectToActivate.activeSelf == false){
+            treeOfLifeTrigger.SetActive(true);
             gameObjectToActivate.SetActive(true);
         }
         else{
