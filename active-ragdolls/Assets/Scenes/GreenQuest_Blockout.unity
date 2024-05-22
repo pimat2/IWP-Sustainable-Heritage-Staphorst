@@ -23751,7 +23751,7 @@ GameObject:
   - component: {fileID: 656097335}
   - component: {fileID: 656097334}
   - component: {fileID: 656097333}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TreeOfLifeCollider (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37899,7 +37899,7 @@ GameObject:
   - component: {fileID: 905808346}
   - component: {fileID: 905808345}
   - component: {fileID: 905808344}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TreeOfLifeCollider (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38369,7 +38369,7 @@ GameObject:
   - component: {fileID: 931505736}
   - component: {fileID: 931505735}
   - component: {fileID: 931505739}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TreeOfLifeCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70263,7 +70263,7 @@ GameObject:
   - component: {fileID: 1337490337}
   - component: {fileID: 1337490336}
   - component: {fileID: 1337490340}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PressurePlatePlank
   m_TagString: PurpleActivator
   m_Icon: {fileID: 0}
@@ -73787,7 +73787,7 @@ GameObject:
   - component: {fileID: 1419480963}
   - component: {fileID: 1419480962}
   - component: {fileID: 1419480961}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TreeOfLifeCollider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74262,7 +74262,7 @@ GameObject:
   - component: {fileID: 1433266258}
   - component: {fileID: 1433266257}
   - component: {fileID: 1433266261}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PressurePlatePlank (1)
   m_TagString: PurpleActivator
   m_Icon: {fileID: 0}
