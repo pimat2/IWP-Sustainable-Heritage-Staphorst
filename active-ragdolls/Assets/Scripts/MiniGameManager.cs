@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.Rendering;
+using TMPro;
 
 public class MiniGameManager : MonoBehaviour
 {
@@ -42,21 +43,20 @@ public class MiniGameManager : MonoBehaviour
     Rigidbody beetrootRigidbody;
     [SerializeField]
     Rigidbody leavesRigidbody;
+     [Header("UI Control Overlays")]
+    public TextMeshProUGUI controlsText1;
+    public TextMeshProUGUI controlsText2; 
+    public TextMeshProUGUI beetrootText1; 
+    public TextMeshProUGUI beetrootText2;
+    [Header("SET TRUE IF PLAYERS GET INVERTED")]
+    public bool controlsInverted;
+    
 
     private void Start() {
         spawnLocation1 = spawnPoint1.transform.position;
         spawnLocation2 = spawnPoint2.transform.position;
     }
-    public void StartMinigame(){
-        Debug.Log("MINIGAME SHOULD START");
-        player1.SetActive(false);
-        player2.SetActive(false);
-        staticplayer1.SetActive(true);
-        staticplayer2.SetActive(true);
-        miniGameActive = true;
-        sideCamera.enabled = true;
-        minigameSlider.SetActive(true);
-    }
+    
     private void Update() {
         if(miniGameActive){
             if(player1Turn && Input.GetKeyDown(KeyCode.Q)){
@@ -73,7 +73,6 @@ public class MiniGameManager : MonoBehaviour
             Application.Quit();
         }
     }
-
     private void CheckInputTiming()
     {
         if(indicatorIn && player1Turn){
@@ -91,11 +90,47 @@ public class MiniGameManager : MonoBehaviour
             beetrootAnimator.SetInteger("beetrootState",animatorState);
         }
     }
+    /*This section controls the start and end of the beetroot minigame.
+    At the start it destroys the ragdoll players in order to enable the side camera to become the main camera of the game
+    as well as enabling the correct UI control overlays. */ 
+    public void StartMinigame(){
+        Debug.Log("MINIGAME SHOULD START");
+        StartMinigamePlayers();
+        miniGameActive = true;
+        sideCamera.enabled = true;
+        minigameSlider.SetActive(true);
+        StartMinigameUI();
+    }
+    private void StartMinigameUI(){
+        controlsText1.enabled = false;
+        controlsText2.enabled = false;
+        beetrootText1.enabled = true;
+        beetrootText2.enabled = true;
+    }
+    private void StartMinigamePlayers(){
+        player1.SetActive(false);
+        player2.SetActive(false);
+        staticplayer1.SetActive(true);
+        staticplayer2.SetActive(true);
+    }
+
+    
     public void FinishMiniGame(){
         Destroy(beetrootCollider);
         miniGameActive = false;
         sideCamera.enabled = false;
         minigameSlider.SetActive(false);
+        FinishMinigamePlayers();
+        if(beetrootRigidbody.isKinematic == true){
+            beetrootRigidbody.isKinematic = false;
+        }
+        if(leavesRigidbody.isKinematic == true){
+            leavesRigidbody.isKinematic = false;
+        }
+        FinishMinigameUI();
+    }
+    
+    private void FinishMinigamePlayers(){
         Destroy(staticplayer1);
         Destroy(staticplayer2);
         Destroy(player1);
@@ -103,12 +138,26 @@ public class MiniGameManager : MonoBehaviour
         GameObject newPlayer1 = Instantiate(activeRagdollPrefab, spawnLocation1, Quaternion.identity);
         GameObject newPlayer2 = Instantiate(activeRagdollPrefab, spawnLocation2, Quaternion.identity);
         CameraModule cameraModule = newPlayer1.GetComponent<CameraModule>();
-        cameraModule.viewPortX = 0;
-        if(beetrootRigidbody.isKinematic == true){
-            beetrootRigidbody.isKinematic = false;
+        CameraModule cameraModule1 = newPlayer2.GetComponent<CameraModule>();
+        Material player2Material = newPlayer2.GetComponentInChildren<Renderer>().material;
+        Material player1Material = newPlayer1.GetComponentInChildren<Renderer>().material;
+        if(controlsInverted == true){
+            player2Material.color = Color.red;
+            player1Material.color = Color.blue;
+            cameraModule1.viewPortX = 0f;
+            cameraModule.viewPortX = 0.5f;
         }
-        if(leavesRigidbody.isKinematic == true){
-            leavesRigidbody.isKinematic = false;
+        else{
+            player2Material.color = Color.blue;
+            player1Material.color = Color.red;
+            cameraModule1.viewPortX = 0.5f;
+            cameraModule.viewPortX = 0f;
         }
+    }
+    private void FinishMinigameUI(){
+        controlsText1.enabled = true;
+        controlsText2.enabled = true;
+        beetrootText1.enabled = false;
+        beetrootText2.enabled = false;
     }
 }
