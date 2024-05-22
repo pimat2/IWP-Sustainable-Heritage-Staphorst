@@ -20,6 +20,9 @@ public class TreeofLifePuzzle : MonoBehaviour
                 if(bridgeToActivate.activeSelf == false){
                     bridgeToActivate.SetActive(true);
                 }
+                if(gameObject.activeSelf == true){
+                    gameObject.SetActive(false);
+                }
             }
         }
         else if(other.CompareTag("TreeofLifeSecondPart")){
@@ -27,11 +30,17 @@ public class TreeofLifePuzzle : MonoBehaviour
                 treeofLifeSecondPart.SetActive(true);
                 Destroy(other.gameObject);
             }
+            if(gameObject.activeSelf == true){
+                    gameObject.SetActive(false);
+            }
         }
         else if(other.CompareTag("TreeofLifeThirdPart")){
             if(treeofLifeThirdPart.activeSelf == false){
                 treeofLifeThirdPart.SetActive(true);
                 Destroy(other.gameObject);
+            }
+            if(gameObject.activeSelf == true){
+                    gameObject.SetActive(false);
             }
         }
     }

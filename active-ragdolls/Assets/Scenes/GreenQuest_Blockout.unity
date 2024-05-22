@@ -20622,7 +20622,7 @@ GameObject:
   - component: {fileID: 561664567}
   - component: {fileID: 561664571}
   - component: {fileID: 561664572}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TreeofLifePartThirdPuzzle
   m_TagString: TreeofLifeThirdPart
   m_Icon: {fileID: 0}
@@ -23847,7 +23847,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1606519147af380458163d4908685e02, type: 2}
+      objectReference: {fileID: 2100000, guid: d0e2c62c357c85c44ab3ce40dc452051, type: 2}
     - target: {fileID: 919132149155446097, guid: bb91460ceee6df4468359aba560f89ba,
         type: 3}
       propertyPath: m_Name
@@ -35081,7 +35081,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: aeb81da5b5959964890eb1f113c42854, type: 2}
+      objectReference: {fileID: 2100000, guid: 25b409f0ca8ddf9448cf28c01afd4ef4, type: 2}
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44209,7 +44209,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1606519147af380458163d4908685e02, type: 2}
+      objectReference: {fileID: 2100000, guid: d0e2c62c357c85c44ab3ce40dc452051, type: 2}
     - target: {fileID: 919132149155446097, guid: 62e6f3df71c85964dab536c3d5d62fe0,
         type: 3}
       propertyPath: m_Name
@@ -44334,7 +44334,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1606519147af380458163d4908685e02, type: 2}
+      objectReference: {fileID: 2100000, guid: d0e2c62c357c85c44ab3ce40dc452051, type: 2}
     - target: {fileID: 919132149155446097, guid: 62e6f3df71c85964dab536c3d5d62fe0,
         type: 3}
       propertyPath: m_Name
@@ -45795,7 +45795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   treeofLifePart: {fileID: 561664566}
-  treeofLifeTrigger: {fileID: 0}
+  treeofLifeTrigger: {fileID: 76419201}
   isBeetrootComposted: 0
   isLeavesComposted: 0
 --- !u!43 &1137931628
@@ -46151,8 +46151,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3358798845
-  m_fontColor: {r: 0.99215686, g: 0.2, b: 0.2, a: 0.78431374}
+    rgba: 4281545725
+  m_fontColor: {r: 0.99215686, g: 0.2, b: 0.2, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -46175,7 +46175,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -46205,7 +46205,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 1.6589661, z: -105.67517, w: 0}
+  m_margin: {x: 0, y: 1.6589661, z: -68.79474, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -46883,8 +46883,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 2533359615
-  m_fontColor: {r: 0.22921856, g: 0.6310051, b: 0.9528302, a: 0.78431374}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -46907,7 +46907,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -49184,7 +49184,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242718985}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -49197,7 +49197,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5a4f2e90dcce1de42bd53d03d43e1dea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83460,7 +83460,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1606519147af380458163d4908685e02, type: 2}
+      objectReference: {fileID: 2100000, guid: d0e2c62c357c85c44ab3ce40dc452051, type: 2}
     - target: {fileID: 919132149155446097, guid: bb91460ceee6df4468359aba560f89ba,
         type: 3}
       propertyPath: m_Name
@@ -86620,7 +86620,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1744677907}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -86633,7 +86633,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9f7c7789fdbb8f1458eaa08d607c0702, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -87135,7 +87135,7 @@ GameObject:
   - component: {fileID: 1778340823}
   - component: {fileID: 1778340827}
   - component: {fileID: 1778340828}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TreeofLifePartSecondPuzzle
   m_TagString: TreeofLifeSecondPart
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}

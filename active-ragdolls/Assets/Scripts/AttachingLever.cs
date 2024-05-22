@@ -11,6 +11,7 @@ public class AttachingLever : MonoBehaviour
     {
         Destroy(missingLever);
         millLever.SetActive(true);
+        gameObject.SetActive(false);
     }
    }
 }

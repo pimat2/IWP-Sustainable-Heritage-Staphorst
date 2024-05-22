@@ -145,7 +145,7 @@ public class MiniGameManager : MonoBehaviour
         Material player1Material = newPlayer1.GetComponentInChildren<Renderer>().material;
         if(controlsInverted == true){
             player2Material.color = Color.red;
-            player1Material.color = Color.blue;
+            player1Material.color = Color.HSVToRGB(196, 74, 66);
             cameraModule1.viewPortX = 0f;
             cameraModule.viewPortX = 0.5f;
         }
