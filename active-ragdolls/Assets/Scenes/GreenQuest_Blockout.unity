@@ -93789,32 +93789,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   players:
-  - name: Right
-    routes:
-    - original: 37
-      remapped: 63
-    - original: 33
-      remapped: 64
-    - original: 15
-      remapped: 61
-    - original: 18
-      remapped: 62
-    - original: 40
-      remapped: 29
-    - original: 38
-      remapped: 30
-    - original: 19
-      remapped: 12
-    - original: 31
-      remapped: 11
-    - original: 63
-      remapped: 0
-    - original: 64
-      remapped: 0
-    - original: 61
-      remapped: 0
-    - original: 62
-      remapped: 0
   - name: Left
     routes:
     - original: 37
@@ -93833,6 +93807,32 @@ MonoBehaviour:
       remapped: 36
     - original: 31
       remapped: 17
+    - original: 63
+      remapped: 0
+    - original: 64
+      remapped: 0
+    - original: 61
+      remapped: 0
+    - original: 62
+      remapped: 0
+  - name: Right
+    routes:
+    - original: 37
+      remapped: 63
+    - original: 33
+      remapped: 64
+    - original: 15
+      remapped: 61
+    - original: 18
+      remapped: 62
+    - original: 40
+      remapped: 29
+    - original: 38
+      remapped: 30
+    - original: 19
+      remapped: 12
+    - original: 31
+      remapped: 11
     - original: 63
       remapped: 0
     - original: 64

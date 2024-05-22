@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using ActiveRagdoll;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
@@ -71,6 +72,7 @@ public class MiniGameManager : MonoBehaviour
         }
         if(miniGameActive == false && Input.GetKeyDown(KeyCode.Escape)){
             Application.Quit();
+            
         }
     }
 
