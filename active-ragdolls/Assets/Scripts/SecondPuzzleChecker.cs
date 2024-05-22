@@ -6,12 +6,23 @@ using UnityEngine;
 public class SecondPuzzleChecker : MonoBehaviour
 {
     [SerializeField]
+    Color dirtyWaterColor;
+    [SerializeField]
+    Color cleanWaterColor;
+    [SerializeField]
+    GameObject waterPlane;
+    private Renderer waterRenderer;
+    [SerializeField]
     GameObject secondBridge;
     [SerializeField]
     GameObject secondTreeofLife;
     bool isFirstPuzzleComplete;
     bool isSecondPuzzleComplete;
     public WaterSystemCollider[] waterColliders;
+    private void Start() {
+        waterRenderer = waterPlane.GetComponent<Renderer>();
+        waterRenderer.material.SetColor("_BaseColor", dirtyWaterColor);
+    }
 
     public void CompleteFirstPuzzle(int puzzleNumber, bool isComplete){
         if(puzzleNumber == 1){
@@ -47,6 +58,7 @@ public class SecondPuzzleChecker : MonoBehaviour
             }
             if(secondTreeofLife.activeSelf == false){
                 secondTreeofLife.SetActive(true);
+                waterRenderer.material.SetColor("_BaseColor", cleanWaterColor);
             }
             else{
                 return;
