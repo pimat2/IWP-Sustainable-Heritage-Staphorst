@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main_Menu.unity
+    guid: f0e959d480b021a4aae3acc2b54edab3
+  - enabled: 1
     path: Assets/Scenes/GreenQuest_Blockout.unity
     guid: 011728b459cf6cd489bc414bf1fa6c8b
   - enabled: 0

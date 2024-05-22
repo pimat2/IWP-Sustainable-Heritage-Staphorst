@@ -21,6 +21,7 @@ TagManager:
   - Beetroot
   - BeetrootLeaves
   - PullableDoor
+  - PurpleActivator
   layers:
   - Default
   - TransparentFX
