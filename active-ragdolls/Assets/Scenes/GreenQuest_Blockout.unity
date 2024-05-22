@@ -2909,7 +2909,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &124979119
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6425,6 +6425,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217107949}
   m_Mesh: {fileID: 5410694670141433404, guid: 4c62afe8d7ab38144866fe4612c90e4b, type: 3}
+--- !u!1 &219713158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4949218726877279396, guid: b21f208237dfa604184a809772254745,
+    type: 3}
+  m_PrefabInstance: {fileID: 1593347859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &222091472
 GameObject:
   m_ObjectHideFlags: 0
@@ -20798,7 +20804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &561664567
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35429,8 +35435,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1014210315, guid: b21f208237dfa604184a809772254745, type: 3}
+      propertyPath: animatedBody
+      value: 
+      objectReference: {fileID: 2105631535}
+    - target: {fileID: 1014210315, guid: b21f208237dfa604184a809772254745, type: 3}
       propertyPath: lookSensitivity
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
@@ -83582,8 +83592,12 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1014210315, guid: b21f208237dfa604184a809772254745, type: 3}
+      propertyPath: animatedBody
+      value: 
+      objectReference: {fileID: 219713158}
+    - target: {fileID: 1014210315, guid: b21f208237dfa604184a809772254745, type: 3}
       propertyPath: lookSensitivity
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8155091382412712372, guid: b21f208237dfa604184a809772254745,
         type: 3}
@@ -87513,7 +87527,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1778340823
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -94641,13 +94655,13 @@ MonoBehaviour:
     - original: 18
       remapped: 18
     - original: 40
-      remapped: 40
+      remapped: 16
     - original: 38
-      remapped: 38
+      remapped: 28
     - original: 19
-      remapped: 19
+      remapped: 36
     - original: 31
-      remapped: 31
+      remapped: 17
     - original: 63
       remapped: 0
     - original: 64
@@ -94667,9 +94681,9 @@ MonoBehaviour:
     - original: 18
       remapped: 62
     - original: 40
-      remapped: 6
+      remapped: 29
     - original: 38
-      remapped: 5
+      remapped: 30
     - original: 19
       remapped: 12
     - original: 31
@@ -101749,6 +101763,12 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &2105631535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4949218726877279396, guid: b21f208237dfa604184a809772254745,
+    type: 3}
+  m_PrefabInstance: {fileID: 860862257}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2107384568
 PrefabInstance:
   m_ObjectHideFlags: 0

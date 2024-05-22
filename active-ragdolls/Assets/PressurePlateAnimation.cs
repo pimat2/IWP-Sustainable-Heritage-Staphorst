@@ -6,6 +6,7 @@ public class PressurePlateAnimation : MonoBehaviour
 {
     public  static int activatedPressurePlatesCount = 0;
     public int totalPressurePlatesCount = 3;
+    bool pressurePlateDown;
     [SerializeField]
     GameObject gameObjectToActivate;
     private void Update() {
@@ -19,6 +20,7 @@ public class PressurePlateAnimation : MonoBehaviour
     public void PressurePlateFullyDown(){
         activatedPressurePlatesCount ++;
         Debug.Log(activatedPressurePlatesCount);
+        pressurePlateDown = true;
         if(activatedPressurePlatesCount >= totalPressurePlatesCount){
             AllPressurePlatesActivated();
         }
@@ -26,6 +28,9 @@ public class PressurePlateAnimation : MonoBehaviour
     }
     public void PressurePlateFullyUp(){
         if(activatedPressurePlatesCount <= 0){
+            return;
+        }
+        else if(pressurePlateDown == false){
             return;
         }
         else{

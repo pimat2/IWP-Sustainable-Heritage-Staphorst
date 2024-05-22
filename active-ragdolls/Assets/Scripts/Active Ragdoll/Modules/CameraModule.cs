@@ -21,10 +21,11 @@ namespace ActiveRagdoll {
         public float viewportHeight = 1;
         public float viewportWidth = 1;
 
+
         public GameObject Camera { get; private set; }
         private Vector2 _cameraRotation;
         private Vector2 _inputDelta;
-
+        
 
         [Header("--- SMOOTHING ---")]
         public float smoothSpeed = 5;
@@ -75,18 +76,22 @@ namespace ActiveRagdoll {
             _currentDistance = initialDistance;
 
             _startDirection = _lookPoint.forward;
+            
         }
 
         void Update() {
             UpdateCameraInput();
             UpdateCameraPosRot();
             AvoidObstacles();
+            
         }
 
         private void UpdateCameraInput() {
             _cameraRotation.x = Mathf.Repeat(_cameraRotation.x + _inputDelta.x * (invertX ? -1 : 1) * lookSensitivity, 360);
+           
             _cameraRotation.y = Mathf.Clamp(_cameraRotation.y + _inputDelta.y * (invertY ? 1 : -1) * lookSensitivity,
                                     minVerticalAngle, maxVerticalAngle);
+            //_cameraRotation.y = animationBodyRotationY;
         }
 
         private void UpdateCameraPosRot() {
