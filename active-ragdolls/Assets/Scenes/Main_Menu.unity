@@ -35037,7 +35037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1098747867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35137,6 +35137,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startGame: {fileID: 8457298537210981508}
+  optionsButton: {fileID: 758003378209793515}
+  mainMenuBackButton: {fileID: 6602225247915580570}
+  mainMenuCanvas: {fileID: 1098747869}
+  optionsCanvas: {fileID: 1849116438}
 --- !u!43 &1110899875
 Mesh:
   m_ObjectHideFlags: 0
@@ -40630,7 +40634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1271278349
 RectTransform:
   m_ObjectHideFlags: 0
