@@ -84,7 +84,7 @@ namespace ActiveRagdoll {
             UpdateCameraInput();
             UpdateCameraPosRot();
             AvoidObstacles();
-            Debug.Log(_cameraRotation.x);
+            
         }
 
         private void UpdateCameraInput() {
