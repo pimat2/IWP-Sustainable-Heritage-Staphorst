@@ -1,6 +1,7 @@
 ﻿#pragma warning disable 649
 
 using System;
+using System.Timers;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -83,7 +84,7 @@ namespace ActiveRagdoll {
             UpdateCameraInput();
             UpdateCameraPosRot();
             AvoidObstacles();
-            
+            Debug.Log(_cameraRotation.x);
         }
 
         private void UpdateCameraInput() {
@@ -129,7 +130,7 @@ namespace ActiveRagdoll {
         // ------------- Input Handlers -------------
 
         public void OnLook(InputValue value) {
-            _inputDelta = value.Get<Vector2>() / 10 ;
+            _inputDelta = value.Get<Vector2>() / 1 * Time.deltaTime ;
         }
 
         public void OnScrollWheel(InputValue value) {
