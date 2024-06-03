@@ -5,6 +5,8 @@ using UnityEngine;
 public class TreeofLifePuzzle : MonoBehaviour
 {
     [SerializeField]
+    GameObject invisibleWallToDeactivate;
+    [SerializeField]
     GameObject treeofLifeFirstPart;
     [SerializeField]
     GameObject treeofLifeSecondPart;
@@ -19,6 +21,7 @@ public class TreeofLifePuzzle : MonoBehaviour
                 Destroy(other.gameObject);
                 if(bridgeToActivate.activeSelf == false){
                     bridgeToActivate.SetActive(true);
+                    invisibleWallToDeactivate.SetActive(false);
                 }
                 if(gameObject.activeSelf == true){
                     gameObject.SetActive(false);

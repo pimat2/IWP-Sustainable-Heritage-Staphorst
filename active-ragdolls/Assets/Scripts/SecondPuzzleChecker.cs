@@ -6,6 +6,8 @@ using UnityEngine;
 public class SecondPuzzleChecker : MonoBehaviour
 {
     [SerializeField]
+    GameObject secondInvisibleWall;
+    [SerializeField]
     Color dirtyWaterColor;
     [SerializeField]
     Color cleanWaterColor;
@@ -52,6 +54,7 @@ public class SecondPuzzleChecker : MonoBehaviour
             Debug.Log("Puzzles are complete");
             if(secondBridge.activeSelf == false){
                 secondBridge.SetActive(true);
+                secondInvisibleWall.SetActive(false);
             }
             else{
                 return;
