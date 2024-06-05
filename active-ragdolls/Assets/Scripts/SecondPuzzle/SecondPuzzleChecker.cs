@@ -1,10 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.EditorTools;
 using UnityEngine;
+using UnityEngine.Timeline;
 
 public class SecondPuzzleChecker : MonoBehaviour
 {
+    /* A puzzle checker for the second puzzle, 
+    keeps track of multiple objects */
+    [Tooltip("The invisible wall that gets deactivated after all parts from second puzzle have been completed")]
     [SerializeField]
     GameObject secondInvisibleWall;
     [SerializeField]
@@ -14,13 +19,17 @@ public class SecondPuzzleChecker : MonoBehaviour
     [SerializeField]
     GameObject waterPlane;
     private Renderer waterRenderer;
+    [Tooltip("Gets activated after all parts from second puzzle have been completed")]
     [SerializeField]
     GameObject secondBridge;
+    [Tooltip("Gets activated after all parts from second puzzle have been completed")]
     [SerializeField]
     GameObject secondTreeofLife;
     bool isFirstPuzzleComplete;
     bool isSecondPuzzleComplete;
+    [Tooltip("An array of all the water plank collider scripts")]
     public WaterSystemCollider[] waterColliders;
+    /* Gets the renderer of the waterPlane and sets it to the dirtywater color */
     private void Start() {
         waterRenderer = waterPlane.GetComponent<Renderer>();
         waterRenderer.material.SetColor("_BaseColor", dirtyWaterColor);
@@ -48,7 +57,8 @@ public class SecondPuzzleChecker : MonoBehaviour
         Debug.Log("SECOND MILL PUZZLE HAS BEEN COMPLETED");
         CheckPuzzles();
     }
-
+    /* Activates and deactivates neccessarry objects when the mill puzzle and the water planks puzzle have been completed
+    Also sets the color of the water to the cleanWaterColor */
     void CheckPuzzles(){
         if(isFirstPuzzleComplete && isSecondPuzzleComplete){
             Debug.Log("Puzzles are complete");

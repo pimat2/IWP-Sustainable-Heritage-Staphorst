@@ -16541,7 +16541,7 @@ GameObject:
   - component: {fileID: 391173128}
   - component: {fileID: 391173129}
   m_Layer: 9
-  m_Name: InvisWall
+  m_Name: SecondBridgeInvisibleWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18262,7 +18262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b2da2e979a3a3b4c8d6853842cb1cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorRigidbody: {fileID: 1831413622}
 --- !u!43 &450467868
 Mesh:
   m_ObjectHideFlags: 0
@@ -35343,7 +35342,7 @@ PrefabInstance:
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 110.9
+      value: 87.87
       objectReference: {fileID: 0}
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
@@ -35353,7 +35352,7 @@ PrefabInstance:
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 53.4
+      value: 86.602
       objectReference: {fileID: 0}
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
@@ -49539,7 +49538,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   millRotation: {x: -15, y: 0, z: 0}
   startMillRotation: 0
-  secondPuzzleChecker: {fileID: 212447244}
   rotatingMill: {fileID: 617725485}
   millLever: {fileID: 1266574161}
 --- !u!65 &1242718987
@@ -83600,7 +83598,7 @@ PrefabInstance:
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 113.01
+      value: 89.98
       objectReference: {fileID: 0}
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
@@ -83610,7 +83608,7 @@ PrefabInstance:
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 53.530003
+      value: 86.731995
       objectReference: {fileID: 0}
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
@@ -87523,7 +87521,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba945adcab152774f851e15349e41736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondPuzzleChecker: {fileID: 212447244}
   hasBeenComplete: 0
   waterGate: {fileID: 1062511486}
 --- !u!65 &1761074942
@@ -90749,7 +90746,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba945adcab152774f851e15349e41736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondPuzzleChecker: {fileID: 212447244}
   hasBeenComplete: 0
   waterGate: {fileID: 1997997823}
 --- !u!65 &1829622543
@@ -92565,7 +92561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba945adcab152774f851e15349e41736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondPuzzleChecker: {fileID: 212447244}
   hasBeenComplete: 0
   waterGate: {fileID: 1631540026}
 --- !u!65 &1907391106
@@ -100139,7 +100134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba945adcab152774f851e15349e41736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondPuzzleChecker: {fileID: 212447244}
   hasBeenComplete: 0
   waterGate: {fileID: 1891334805}
 --- !u!65 &2043124925

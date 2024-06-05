@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PressurePlate : MonoBehaviour
 {
+    /* Script that handles the up and down movement of the pressure plates in the first puzzle */
+    [Tooltip("Assign a tag to the object that you want to activate the pressure plate and type it in the inspector field")]
     public string activatorTag;
     [SerializeField]
     private Animator animator;

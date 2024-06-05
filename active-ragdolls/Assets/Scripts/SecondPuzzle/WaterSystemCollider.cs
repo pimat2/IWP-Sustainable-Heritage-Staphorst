@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.EditorTools;
 using UnityEngine;
 
 public class WaterSystemCollider : MonoBehaviour
 {
-    [SerializeField]
     SecondPuzzleChecker secondPuzzleChecker;
     public bool hasBeenComplete;
-   public GameObject waterGate;
-   private void OnTriggerEnter(Collider other) {
+    [Tooltip("The static Water Gate objects in the level")]
+    public GameObject waterGate;
+    private void Start() {
+    secondPuzzleChecker = FindObjectOfType<SecondPuzzleChecker>();
+    }
+    private void OnTriggerEnter(Collider other) {
         if(other.CompareTag("WaterSystemPlank"))
         {
             if(waterGate.activeSelf == false){
