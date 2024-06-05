@@ -1,11 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using ActiveRagdoll;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Controls;
-using UnityEngine.Rendering;
 using TMPro;
 
 public class MiniGameManager : MonoBehaviour
@@ -26,17 +21,23 @@ public class MiniGameManager : MonoBehaviour
     GameObject staticplayer2;
     [Header("Side Camera")]
     public Camera sideCamera;
+    [Header("The slider for the minigame")]
     public GameObject minigameSlider;
     [SerializeField]
     bool player1Turn = true;
-    public bool miniGameActive;
+    [SerializeField]
+    bool miniGameActive;
     public bool indicatorIn;
     [SerializeField]
     Animator beetrootAnimator;
-    public int animatorState = 0;
+    [SerializeField]
+    int animatorState = 0;
+    [Header("The collider of the beetroot that checks if both players are in")]
     public GameObject beetrootCollider;
+    [Header("Spawn Points for the players after the minigame finishes")]
     [SerializeField]
     GameObject spawnPoint1, spawnPoint2;
+    [Header("Locations of the SpawnPoints")]
     Vector3 spawnLocation1, spawnLocation2;
     [Header("Beetroot Rigidbodies")]
     [SerializeField]
@@ -56,7 +57,8 @@ public class MiniGameManager : MonoBehaviour
         spawnLocation1 = spawnPoint1.transform.position;
         spawnLocation2 = spawnPoint2.transform.position;
     }
-    
+    /* Checks for player inputs if minigameActive is true
+    Quits the minigame when escape is pressed, otherwise quits the game */
     private void Update() {
         if(miniGameActive){
             if(player1Turn && Input.GetKeyDown(KeyCode.Q)){
@@ -74,6 +76,9 @@ public class MiniGameManager : MonoBehaviour
             
         }
     }
+    /* Checks for the input timings, if the indicator is inside the trigger
+    Switches the turns of the players, player 1 is the first to start by default
+    Changes the state of the beetroot animation by 1*/
     private void CheckInputTiming()
     {
         if(indicatorIn && player1Turn){
@@ -114,7 +119,10 @@ public class MiniGameManager : MonoBehaviour
         staticplayer1.SetActive(true);
         staticplayer2.SetActive(true);
     }
-
+    /* This section controls the end of the MiniGame.
+    1. Destroys the beetrootCollider that checks for starting the minigame so the minigame doesn't start again
+    2. Disables the objects related to the minigame(sidecamera, minigame slider)
+    3. Sets the rigidbodies of the beetroot fruit and the leaves to non-kinematic so players can grab them and bring them to the compost */
     
     public void FinishMiniGame(){
         Destroy(beetrootCollider);
@@ -130,7 +138,9 @@ public class MiniGameManager : MonoBehaviour
         }
         FinishMinigameUI();
     }
-    
+    /* When the minigame finishes, the static ragdolls used for visual representations of the players inside the minigame are destroyed
+    as well as the previous players(because of a bug with the ragdolls)
+    Instantiates new active ragdoll player prefabs and adjusts the settings of their components to avoid player confusion(sometimes a bug can happen that will switch the camera views of the players)*/
     private void FinishMinigamePlayers(){
         Destroy(staticplayer1);
         Destroy(staticplayer2);
@@ -155,6 +165,7 @@ public class MiniGameManager : MonoBehaviour
             cameraModule.viewPortX = 0f;
         }
     }
+    /* Disables the text objects for the controls of the minigame and reenables the old control overlay */
     private void FinishMinigameUI(){
         controlsText1.enabled = true;
         controlsText2.enabled = true;

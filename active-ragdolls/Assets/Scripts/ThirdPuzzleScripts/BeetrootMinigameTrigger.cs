@@ -1,10 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class BeetrootMinigameTrigger : MonoBehaviour
 {
+    /* Checks if both players are in the trigger in order to start the minigame */
     MiniGameManager miniGameManager;
 
     public GameObject player1, player2;

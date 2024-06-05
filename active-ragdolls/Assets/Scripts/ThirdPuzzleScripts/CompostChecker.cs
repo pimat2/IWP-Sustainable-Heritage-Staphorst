@@ -1,11 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class CompostChecker : MonoBehaviour
 {
+    /* Trigger check for the compost checker
+    When the fruit of the beetroot and the leaves have been "put" in the compost 
+    activates the tree of life */
+    [Tooltip("The tree of life part that gets activated")]
     [SerializeField]
     GameObject treeofLifePart;
+    [Tooltip("The tree of life trigger on the pedestal that checks for player proximity")]
     [SerializeField]
     GameObject treeofLifeTrigger;
     public bool isBeetrootComposted;

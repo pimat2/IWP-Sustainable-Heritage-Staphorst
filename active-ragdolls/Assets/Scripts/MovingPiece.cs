@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class MovingPiece : MonoBehaviour
 {
+    /* Simple mover and rotator of objects using the sine wave math function */
     [Range(0.0f, 10.0f)]
     public float amplifier; 
     [Range(0.0f, 10.0f)]
@@ -18,12 +19,10 @@ public class MovingPiece : MonoBehaviour
     private void Start() {
         initialPosition = transform.position;
     }
-        // Update is called once per frame
     void Update()
     {
         MoveAndRotate();
     }
-
     private void MoveAndRotate()
     {
         if(moveSideways == true){

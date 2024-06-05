@@ -35342,7 +35342,7 @@ PrefabInstance:
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 87.87
+      value: 110.39
       objectReference: {fileID: 0}
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
@@ -35352,7 +35352,7 @@ PrefabInstance:
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 86.602
+      value: 52.35
       objectReference: {fileID: 0}
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
@@ -40871,7 +40871,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32d4f02826e5837498a98134ea5382bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeofLifepart: {fileID: 561664566}
   compost: {fileID: 1631820536}
 --- !u!4 &997789624 stripped
 Transform:
@@ -71686,7 +71685,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32d4f02826e5837498a98134ea5382bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeofLifepart: {fileID: 561664566}
   compost: {fileID: 1052453166}
 --- !u!1 &1337490335
 GameObject:
@@ -83598,7 +83596,7 @@ PrefabInstance:
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 89.98
+      value: 112.5
       objectReference: {fileID: 0}
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
@@ -83608,7 +83606,7 @@ PrefabInstance:
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 86.731995
+      value: 52.479996
       objectReference: {fileID: 0}
     - target: {fileID: 8894856259471134341, guid: b21f208237dfa604184a809772254745,
         type: 3}
@@ -84931,7 +84929,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 153316848}
+  m_Mesh: {fileID: 283947695}
 --- !u!33 &1631820539
 MeshFilter:
   m_ObjectHideFlags: 10
