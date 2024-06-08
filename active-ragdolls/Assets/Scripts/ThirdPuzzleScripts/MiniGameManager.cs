@@ -49,6 +49,7 @@ public class MiniGameManager : MonoBehaviour
     public TextMeshProUGUI controlsText2; 
     public TextMeshProUGUI beetrootText1; 
     public TextMeshProUGUI beetrootText2;
+    public Canvas menuCanvas;
     [Header("SET TRUE IF PLAYERS GET INVERTED")]
     public bool controlsInverted;
     
@@ -72,8 +73,7 @@ public class MiniGameManager : MonoBehaviour
             }
         }
         if(miniGameActive == false && Input.GetKeyDown(KeyCode.Escape)){
-            Application.Quit();
-            
+            PauseGame();
         }
     }
     /* Checks for the input timings, if the indicator is inside the trigger
@@ -171,5 +171,18 @@ public class MiniGameManager : MonoBehaviour
         controlsText2.enabled = true;
         beetrootText1.enabled = false;
         beetrootText2.enabled = false;
+    }
+
+    private void PauseGame(){
+        if(menuCanvas.gameObject.activeSelf == false){
+            menuCanvas.gameObject.SetActive(true);
+            Time.timeScale = 0;
+        }
+    }
+    public void ResumeGame(){
+        if(menuCanvas.gameObject.activeSelf == true){
+            menuCanvas.gameObject.SetActive(false);
+            Time.timeScale = 1;
+        }
     }
 }
