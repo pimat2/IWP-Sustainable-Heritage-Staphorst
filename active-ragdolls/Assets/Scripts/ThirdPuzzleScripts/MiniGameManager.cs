@@ -172,13 +172,14 @@ public class MiniGameManager : MonoBehaviour
         beetrootText1.enabled = false;
         beetrootText2.enabled = false;
     }
-
+    /* Pauses the game and enables the pause menu UI canvas */
     private void PauseGame(){
         if(menuCanvas.gameObject.activeSelf == false){
             menuCanvas.gameObject.SetActive(true);
             Time.timeScale = 0;
         }
     }
+    /* Resumes the game and disables the pause menu */
     public void ResumeGame(){
         if(menuCanvas.gameObject.activeSelf == true){
             menuCanvas.gameObject.SetActive(false);
