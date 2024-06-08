@@ -325,7 +325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _activeRagdoll: {fileID: 8894856259471134340}
   _lookPoint: {fileID: 4519737965648554595}
-  lookSensitivity: 2
+  lookSensitivity: 50
   scrollSensitivity: 1
   invertY: 0
   invertX: 0
