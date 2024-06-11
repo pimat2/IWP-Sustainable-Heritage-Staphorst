@@ -75,6 +75,7 @@ public class MiniGameManager : MonoBehaviour
         if(miniGameActive == false && Input.GetKeyDown(KeyCode.Escape)){
             PauseGame();
         }
+        
     }
     /* Checks for the input timings, if the indicator is inside the trigger
     Switches the turns of the players, player 1 is the first to start by default
@@ -177,6 +178,9 @@ public class MiniGameManager : MonoBehaviour
         if(menuCanvas.gameObject.activeSelf == false){
             menuCanvas.gameObject.SetActive(true);
             Time.timeScale = 0;
+        }
+        else{
+            ResumeGame();
         }
     }
     /* Resumes the game and disables the pause menu */
